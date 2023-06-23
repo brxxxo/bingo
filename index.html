@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,25 +8,27 @@
     <title>Bingo</title>
 </head>
 <body>
-    <header>
-        <h1>Bingo</h1>
-    </header>
-    <nav>
-    </nav>
-    <main>
-        <section id="cartelas">
+ <main>
+    <header>BINGO</header>
+    <div class="container">
+        <div class="jogo">
             <div>
-                <h2>Cartelas</h2>
-                <button onclick="gerarCartela()">Gerar Cartela</button>
-                <button onclick="reiniciarJogo()">Reiniciar</button>
+                <button id="gerar" onclick="gerarCartela()">Gerar Cartela</button>
+                <button id="resetar" onclick="reiniciarJogo()">Reiniciar Jogo</button>
             </div>
-            <div id="espaco_cartelas">
+            <section id="area-cartela">
+               <div id="bingo-game">
+                   <div id="nome-jogador"></div>
+                   <div id="espaco-cartelas"></div>
+               </div>
+            </section>
+        </div>
+            <div class="container-numeros">
+                <button id="iniciar" onclick="iniciarJogo()">Iniciar Jogo</button>
+                <div id="numeros-sorteados"></div>
             </div>
-        </section>
-        <section id="numeros">
-            <h2>Números</h2>
-        </section>
-    </main>
+    </div>
+ </main>
     <script src="index.js"></script>
 </body>
 </html>
